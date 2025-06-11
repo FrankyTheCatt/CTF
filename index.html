@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Validación</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Cuestionario de Validación</h1>
+        <p>Responde a las siguientes preguntas para continuar.</p>
+
+        <div class="question-block">
+            <label for="q1">1. ¿Cuál es la capital de Chile?</label>
+            <input type="text" id="q1" placeholder="Tu respuesta...">
+        </div>
+
+        <div class="question-block">
+            <label for="q2">2. ¿Qué planeta es conocido como el "Planeta Rojo"?</label>
+            <input type="text" id="q2" placeholder="Tu respuesta...">
+        </div>
+
+        <div class="question-block">
+            <label for="q3">3. En Python, ¿qué palabra clave se usa para definir una función?</label>
+            <input type="text" id="q3" placeholder="Tu respuesta...">
+        </div>
+
+        <div class="question-block">
+            <label for="q4">4. ¿En qué región de Chile se encuentra la ciudad de Coquimbo?</label>
+            <input type="text" id="q4" placeholder="Tu respuesta...">
+        </div>
+
+        <button id="validateBtn">Validar Respuestas</button>
+
+        <div id="result-message"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

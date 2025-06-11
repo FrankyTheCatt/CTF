@@ -1,0 +1,3 @@
+#base64 -d /path/to/file
+#base64 -d <<<"string"
+FLAG2="aGF0c3VuZSBtaWt1IGZvcm5pdGUgbGEgZGVsIGZvcm5pdGU="
