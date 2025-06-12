@@ -85,4 +85,106 @@ button:hover {
     background-color: #f8d7da;
     color: #721c24;
     border: 1px solid #f5c6cb;
+
+.question-block button {
+    display: block;
+    width: auto; /* Ancho automático */
+    padding: 8px 15px; /* Menos padding */
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px; /* Texto más pequeño */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px; /* Espacio sobre el botón */
+}
+
+.question-block button:hover {
+    background-color: #0056b3;
+}
+
+/* El nuevo div para los mensajes de feedback */
+.feedback-message {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    display: none; /* Oculto por defecto */
+}
+
+/* Clases para correcto/incorrecto (pueden ser las mismas que antes) */
+.correct {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.incorrect {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* Elimina el estilo del botón y mensaje antiguos si aún existen */
+#validateBtn, #result-message {
+    display: none;
+}
+
+    /* =============== ESTILOS PARA EL DECODIFICADOR =============== */
+
+.decoder-container {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 2px solid #eee;
+}
+
+.decoder-container h2 {
+    text-align: center;
+    color: #333;
+}
+
+#base64-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: monospace;
+    resize: vertical;
+    margin-bottom: 10px;
+}
+
+#decode-btn {
+    display: block;
+    width: auto;
+    padding: 8px 15px;
+    background-color: #28a745; /* Un color diferente para distinguirlo */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+#decode-btn:hover {
+    background-color: #218838;
+}
+
+#decoded-output {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    min-height: 50px;
+    white-space: pre-wrap; /* Para que el texto largo se ajuste */
+    word-wrap: break-word; /* Para romper palabras largas */
+    font-family: monospace;
+    color: #495057;
+}
 }

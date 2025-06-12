@@ -7,34 +7,51 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <div class="container">
-        <h1>Cuestionario de Validación</h1>
-        <p>Responde a las siguientes preguntas para continuar.</p>
+        <h1>CTF - Analisis Forense</h1>
+        <p>Responde las siguientes preguntas</p>
 
         <div class="question-block">
-            <label for="q1">1. ¿Cuál es la capital de Chile?</label>
+            <label for="q1">1. ¿Con que cuenta se logeo el atacante?</label>
             <input type="text" id="q1" placeholder="Tu respuesta...">
+            <button>Validar</button>
+            <div class="feedback-message"></div>
         </div>
 
         <div class="question-block">
-            <label for="q2">2. ¿Qué planeta es conocido como el "Planeta Rojo"?</label>
+            <label for="q2">2. ¿Cual es la nueva contraseña de la cuenta logeada?</label>
             <input type="text" id="q2" placeholder="Tu respuesta...">
+            <button>Validar</button>
+            <div class="feedback-message"></div>
         </div>
 
         <div class="question-block">
-            <label for="q3">3. En Python, ¿qué palabra clave se usa para definir una función?</label>
+            <label for="q3">3. Ingresa la FLAG_1</label>
             <input type="text" id="q3" placeholder="Tu respuesta...">
+            <button>Validar</button>
+            <div class="feedback-message"></div>
         </div>
 
         <div class="question-block">
-            <label for="q4">4. ¿En qué región de Chile se encuentra la ciudad de Coquimbo?</label>
+            <label for="q4">4. ¿En que directorio se creo el 2do archivo del atacante?</label>
             <input type="text" id="q4" placeholder="Tu respuesta...">
+            <button>Validar</button>
+            <div class="feedback-message"></div>
         </div>
 
-        <button id="validateBtn">Validar Respuestas</button>
+        <div class="question-block">
+            <label for="q5">5. Ingresa la FLAG_2 decodeada</label>
+            <input type="text" id="q5" placeholder="Tu respuesta...">
+            <button>Validar</button>
+            <div class="feedback-message"></div>
+        </div>
 
-        <div id="result-message"></div>
+        <div class="decoder-container">
+    <h2>Decodificador Base64</h2>
+    <textarea id="base64-input" rows="4" placeholder="Pega el texto en Base64 aquí..."></textarea>
+    <button id="decode-btn">Decodificar</button>
+    <pre id="decoded-output"></pre>
+    </div>
     </div>
 
     <script src="script.js"></script>
